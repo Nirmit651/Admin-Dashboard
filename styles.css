@@ -1,0 +1,97 @@
+html{
+    display: flex;
+    
+}
+
+p{
+    margin-top: 0px;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    width: max(150px, 15vw);
+    background: gray;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-one{
+    width: 150px;
+}
+
+div.sidebar > div.sidebar-one > div{
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: repeat(6,0px);
+    gap:7px;
+    background-color: red;
+    
+}
+
+.sidebar-two{
+    width: 150px;
+}
+
+div.sidebar > div.sidebar-two > div{
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: repeat(3,0px);
+    gap:10px;
+    background-color: blue;
+    
+}
+
+div.article > div.projects{
+    display: grid;
+    width:800px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+div.article > div.projects > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: red;
+    width: 350px;
+    padding: 25px;
+}
+
+div.article > div.projects > div > h4{
+    margin: 0px;
+   
+    padding: 0px;
+}
+
+div.article > div.projects > div > div.icons{
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    align-items: end;
+    background-color: blue;
+    
+}
+
+div.article > div.projects > div > div.icons > img{
+    margin-left: 5px;
+    
+}
+
+
+
+/* div.sidebar > div > div > p{
+    font-weight: bold;
+}
+
+div.sidebar > div > div > img{
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar > div > div{
+    display: flex;
+    
+} */
