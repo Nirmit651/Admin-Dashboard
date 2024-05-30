@@ -1,97 +1,242 @@
-html{
-    display: flex;
-    
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
 }
 
-p{
-    margin-top: 0px;
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 7vh 10vh 83vh;
+}
+
+[src$=".svg"]{
+    filter: invert(100%) sepia(0%) saturate(7498%) hue-rotate(168deg) brightness(100%) contrast(103%);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{
+    margin: 0px;
     padding: 0;
+    color: #FFFFFF;
+    font: bold;
 }
 
 .sidebar {
     height: 100vh;
-    width: max(150px, 15vw);
-    background: gray;
+    background: #06b6d4;
     padding: 25px;
     display: flex;
     flex-direction: column;
+    grid-row: 1/2;
+    grid-column: 1;
 }
 
-.sidebar-one{
-    width: 150px;
+div.sidebar > div.sidebar-title {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+div.sidebar-one{
+    margin-bottom: 80px;
+    margin-left: 5px;
 }
 
 div.sidebar > div.sidebar-one > div{
     display: grid;
-    grid-template-columns: 30px 100px;
-    grid-template-rows: repeat(6,0px);
-    gap:7px;
-    background-color: red;
-    
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 
-.sidebar-two{
-    width: 150px;
+div.sidebar > div.sidebar-one > div > img{
+    justify-items: center;
+}
+
+div.sidebar > div.sidebar-one > div.home > img{
+    grid-template-columns: 1fr 5fr;
+    margin-right: 10px;
+    justify-content: end;
+
 }
 
 div.sidebar > div.sidebar-two > div{
     display: grid;
-    grid-template-columns: 30px 100px;
-    grid-template-rows: repeat(3,0px);
-    gap:10px;
-    background-color: blue;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 50px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+div.top{
+    grid-column: 2;
+    grid-row: 1/2;
+    background: white;
+}
+
+div.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
     
 }
 
-div.article > div.projects{
+.searchbar{
     display: grid;
-    width:800px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: 80px 5fr;
+    grid-template-rows: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 600px;
+    height: 50px;
 }
 
-div.article > div.projects > div{
+.search-icon{
+    justify-self: end;
+    margin-right: 10px;
+    filter: none;
+}
+
+#searchbar{
+    border-radius: 25px;
+    height:25px;
+    background-color: #e4e4e7;
+    border: none;
+}
+
+img[src="profilepic.jpeg"]{
+    border-radius: 100px;
+}
+
+.header-one {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 70px;
+    place-items: center;
+    background: white;
+    color: black;
+}
+
+.header-one > h4{
+    color: black;
+    margin-right: 40px;
+}
+
+.notification-icon{
+    filter: none;
+}
+
+.header-one > img[src="profilepic.jpeg"]{
+    width: 50px;
+    height: 50px;
+}
+
+div.nav{
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: red;
-    width: 350px;
-    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-bottom: solid 1px gray ;
 }
 
-div.article > div.projects > div > h4{
-    margin: 0px;
-   
-    padding: 0px;
+div.nav > div.greeting{
+    display: grid;
+    grid-template-columns: 80px 300px;
+    grid-template-rows: 30px 50px;
 }
 
-div.article > div.projects > div > div.icons{
-    display: flex;
-    width: 350px;
-    justify-content: space-around;
-    align-items: end;
-    background-color: blue;
-    
+div.greeting > img{
+    grid-row: 1/2;
+    grid-column: 1;
 }
 
-div.article > div.projects > div > div.icons > img{
-    margin-left: 5px;
-    
-}
-
-
-
-/* div.sidebar > div > div > p{
+div.greeting > p{
+    grid-row: 1;
+    grid-column: 2;
+    align-self: end;
     font-weight: bold;
 }
 
-div.sidebar > div > div > img{
-    margin: 0;
-    padding: 0;
+div.greeting > h2{
+    grid-row: 2;
+    grid-column: 2;
 }
 
-div.sidebar > div > div{
+div.nav > div.greeting > p,h2{
+    color: black;
+}
+
+.creation-buttons > button{
+    border-radius: 25px;
+    background-color: #06b6d4;
+    border: none;
+    height: 35px;
+    width: 100px;
+    color:white;
+    font-weight: bold;
+}
+
+div.article{
+    grid-row: 3;
+    grid-column: 2;
+    margin-left: 15px;
+}
+
+div.article-container{
+    display:flex;
+}
+
+.article > h2{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+
+div.projects{
+    display:grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: repeat(3, 220px);
+    gap: 15px;
+    background: red;
+}
+
+div.projects > div.project{
     display: flex;
-    
-} */
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    background: white;
+    padding: 10px;
+    border-left: solid 10px orange;
+}
+
+div.projects > div.project > h4{
+    margin-top: 20px;
+}
+
+.icons{
+    width: 320px;
+    display: flex;
+    justify-content: end;
+}
+
+.icons > img{
+    margin-right: 10px;
+    filter: none;
+}
+
+div.projects > div > h4{
+    color: black;
+}
+
+div.projects > div > p{
+    color: gray;
+}
