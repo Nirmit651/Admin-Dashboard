@@ -2,96 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
     <div class="grid-container">
         <div class="sidebar">
-            <div class="sidebar-title">
+            <div class="sidebar-item" id="dashboard">
                 <img src="dashboard.svg" alt="dashboard icon" width="50" height="50">
-                <h3>Dashboard</h2>
+                <h3 class="sidebar-label">Dashboard</h2>
             </div>
-            <div class="sidebar-one">
-                <div class="home">
-                    <img src="home.svg" alt="home icon" width="25" height="25">
-                    <p>Home</p>
-                </div>
-                <div class="profile">
-                    <img src="profile.svg" alt="profile icon" width="20" height="20">
-                    <p>Profile</p>
-                </div>
-                <div class="messages">
-                    <img src="messages.svg" alt="messages icon" width="20" height="20">
-                    <p>Messages</p>
-                </div>
-                <div class="history">
-                    <img src="history.svg" alt="history icon" width="20" height="20">
-                    <p>History</p>
-                </div>
-                <div class="tasks">
-                    <img src="tasks.svg" alt="tasks icon" width="20" height="20">
-                    <p>Tasks</p>
-                </div>
-                <div class="communities">
-                    <img src="communities.svg" alt="communities icon" width="20" height="20">
-                    <p>Communities</p>
-                </div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item" id="home">
+                <img src="home.svg" alt="home icon" width="40" height="40">
+                <h3 class="sidebar-label">Home</h3>
             </div>
-            
-            <div class="sidebar-two">
-                <div class="settings">
-                    <img src="settings.svg" alt="settings icon" width="20" height="20">
-                    <p>Settings</p>
-                </div>
-                <div class="support">
-                    <img src="support.svg" alt="support icon" width="20" height="20">
-                    <p>Support</p>
-                </div>
-                <div class="privacy">
-                    <img src="privacy.svg" alt="privacy icon" width="20" height="20">
-                    <p>Privacy</p>
-                </div>
+            <div class="sidebar-item" id="profile">
+                <img src="profile.svg" alt="profile icon" width="25" height="25">
+                <h3 class="sidebar-label">Profile</h3>
+            </div>
+            <div class="sidebar-item" id="messages">
+                <img src="messages.svg" alt="messages icon" width="25" height="25">
+                <h3 class="sidebar-label">Messages</h3>
+            </div>
+            <div class="sidebar-item" id="history">
+                <img src="history.svg" alt="history icon" width="25" height="25">
+                <h3 class="sidebar-label">History</h3>
+            </div>
+            <div class="sidebar-item" id="tasks">
+                <img src="tasks.svg" alt="tasks icon" width="25" height="25">
+                <h3 class="sidebar-label">Tasks</h3>
+            </div>
+            <div class="sidebar-item" id="communities">
+                <img src="communities.svg" alt="communities icon" width="25" height="25">
+                <h3 class="sidebar-label">Communities</h3>
+            </div>
+            <div class="sidebar-item"></div>
+            <div class="sidebar-item" id="settings">
+                <img src="settings.svg" alt="settings icon" width="25" height="25">
+                <h3 class="sidebar-label">Settings</h3>
+            </div>
+            <div class="sidebar-item" id="support">
+                <img src="support.svg" alt="support icon" width="25" height="25">
+                <h3 class="sidebar-label">Support</h3>
+            </div>
+            <div class="sidebar-item" id="privacy">
+                <img src="privacy.svg" alt="privacy icon" width="25" height="25">
+                <h3 class="sidebar-label">Privacy</h3>
             </div>
         </div>
-
-        <div class="top">
-            <div class="header">
-               <div class="searchbar">
-                    <label class=search-icon for="searchbar"><img src="search.svg" alt="search icon" 
-                        width="20" height="20" class="search-icon"></label>
-                    <input type="text" id="searchbar">
-               </div>
-               <div class="header-one">
-                    <img src="notification.svg" alt="notification icon" width="20" height="20"
-                    class="notification-icon">
-                    <img src="profilepic.jpeg" alt="profile picture" width="20" height="20">
-                    <h4>Kendrick Graham</h4>
-               </div>
-            </div>
             
-            <div class="nav"> 
-                <div class="greeting">
-                    <img src="profilepic.jpeg" alt="profile picture" width="70" height="70">
-                    <p>Hi there,</p>
-                    <h2>Kendrick G. (@kendrick)</h2>
-                </div>
-                <div class="creation-buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+        <div class="header">
+            <div class="searchbar">
+                <label class=search-icon for="searchbar"><img src="search.svg" alt="search icon" 
+                    width="25" height="25" class="black-icon"></label>
+                <input type="text" id="searchbar">
+            </div>
+            <div class="header-one">
+                <img src="notification.svg" alt="notification icon" width="25" height="25"
+                class="black-icon">
+                <img src="profilepic.jpeg" alt="profile picture" width="50" height="50">
+                <h4 class="username">Kendrick Graham</h4>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="greeting">
+                <img class="nav-pfp" src="profilepic.jpeg" alt="profile picture" width="70" height="70">
+                <p class="greeting-text">Hi there,</p>
+                <h2 class="greeting-name">Kendrick G. (@kendrick)</h2>
+            </div>
+            <div class="creation-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </div>
         
         <div class="article">
-            <h2>Your Projects</h2>
-            <div class="article-container">
-                <div class="projects">
-                    <div class="project">
-                        <h4>Super Cool Project</h4>
-                        <p>Sed eu lorem et enim consequat molestie. Donec non odio massa. 
+            <h2 class="projects-title">Your Projects</h2>
+            <div class="projects">
+                <div class="projects-col-one">
+                    <div class="project" id="project-one">
+                        <h4 class="project-title">Super Cool Project</h4>
+                        <p class="project-description">Sed eu lorem et enim consequat molestie. Donec non odio massa. 
                             Sed tincidunt, ipsum fringilla dapibus varius, nulla mauris iaculis 
                             mauris, eu cursus orci risus nec turpis. Proin vehicula orci sit 
                             amet turpis lacinia, id porta magna facilisis..</p>
@@ -101,9 +98,9 @@
                             <img src="share.svg" alt="share" width="20" height="20">
                         </div>
                     </div>
-                    <div class="project">
-                        <h4>Less Cool Project</h4>
-                        <p>Sed mauris magna, hendrerit id tincidunt et, luctus a sem. Mauris 
+                    <div class="project" id="project-two">
+                        <h4 class="project-title">Less Cool Project</h4>
+                        <p class="project-description">Sed mauris magna, hendrerit id tincidunt et, luctus a sem. Mauris 
                             hendrerit placerat nibh vel viverra. Aenean et justo sit amet arcu 
                             pellentesque semper. In et mattis nulla, vel ornare nunc.  </p>
                         <div class="icons">
@@ -112,9 +109,9 @@
                             <img src="share.svg" alt="share" width="20" height="20">
                         </div>
                     </div>
-                    <div class="project">
-                        <h4>Impossible App</h4>
-                        <p> Pellentesque sed arcu enim. Donec eu erat ex. Vestibulum molestie 
+                    <div class="project" id="project-three">
+                        <h4 class="project-title">Impossible App</h4>
+                        <p class="project-description">Pellentesque sed arcu enim. Donec eu erat ex. Vestibulum molestie 
                             vel mauris varius pellentesque. Vestibulum condimentum sodales quam 
                             varius sodales. </p>
                         <div class="icons">
@@ -123,9 +120,11 @@
                             <img src="share.svg" alt="share" width="20" height="20">
                         </div>
                     </div>
-                    <div class="project">
-                        <h4>Easy Peasy App</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a 
+                </div>
+                <div class="projects-col-two">
+                    <div class="project" id="project-four">
+                        <h4 class="project-title">Easy Peasy App</h4>
+                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a 
                             hendrerit ligula, quis elementum velit. Donec gravida ornare 
                             fermentum. Cras dictum mi vitae blandit sollicitudin.</p>
                         <div class="icons">
@@ -134,9 +133,9 @@
                             <img src="share.svg" alt="share" width="20" height="20">
                         </div>
                     </div>
-                    <div class="project">
-                        <h4>Ad Blocked</h4>
-                        <p>Nulla interdum placerat ante. Maecenas interdum sapien justo, eget 
+                    <div class="project" id="project-five">
+                        <h4 class="project-title">Ad Blocked</h4>
+                        <p class="project-description">Nulla interdum placerat ante. Maecenas interdum sapien justo, eget 
                             feugiat purus varius at. Nam pellentesque ut magna sed dapibus. 
                             Vestibulum enim neque, malesuada ac dui nec, pulvinar auctor est.</p>
                         <div class="icons">
@@ -145,9 +144,9 @@
                             <img src="share.svg" alt="share" width="20" height="20">
                         </div>
                     </div>
-                    <div class="project">
-                        <h4>Money Maker</h4>
-                        <p>Aliquam erat volutpat. Cras sed neque at nunc faucibus euismod. Fusce 
+                    <div class="project" id="project-six">
+                        <h4 class="project-title">Money Maker</h4>
+                        <p class="project-description">Aliquam erat volutpat. Cras sed neque at nunc faucibus euismod. Fusce 
                             sodales ut mi at tempor. Duis laoreet lorem fermentum odio pharetra, 
                             nec rhoncus dolor semper.</p>
                         <div class="icons">
@@ -157,25 +156,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed">
-                    <div class="annocements">
-                        <h3>Annocements</h3>
-                        <div class="annoucement-list">
-
+            </div>
+            <div class="feed">
+                <div class="annocements">
+                    <h2 class="annocements-title">Annocements</h2>
+                    <div class="annoucement-list">
+                        <div class="annocement" id="annocement-one">
+                            <h4 class="annocement-title">Site Maintenance</h4>
+                            <p class="annocement-description">Donec gravida ornare 
+                                fermentum. Cras dictum mi vitae blandit sollicitudin</p>
+                        </div>
+                        <div class="annocement" id="annocement-two">
+                            <h4 class="annocement-title">Community Share Day</h4>
+                            <p class="annocement-description">Duis laoreet lorem fermentum 
+                                odio pharetra, nec rhoncus dolor semper.</p>
+                        </div>
+                        <div class="annocement" id="annocement-three">
+                            <h4 class="annocement-title">Updated Privacy Policy</h4>
+                            <p class="annocement-description">Donec gravida ornare 
+                                fermentum. Cras dictum mi vitae blandit sollicitudin.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="trending">
-                        <h3>Trending</h3>
-                        <div class="trending-list">
+                <div class="trending-feed">
+                    <h3 class="trending-title">Trending</h3>
+                    <div class="trending-list">
+                        <div class="trending" id="trending-one">
+                            <img src="trending1.jpg" alt="profile picture" width="50" height="50">
+                            <h4 class="trending-username">@teagan</h4>
+                            <p class="trending-description">World Peace Builder</p>
+                        </div>
+                        <div class="trending" id="trending-two">
+                            <img src="trending2.jpg" alt="profile picture" width="50" height="50">
+                            <h4 class="trending-username">@morgan</h4>
+                            <p class="trending-description">Super Cool Project</p>
+                        </div>
+                        <div class="trending" id="trending-three">
+                            <img src="trending3.jpg" alt="profile picture" width="50" height="50">
+                            <h4 class="trending-username">@kendall</h4>
+                            <p class="trending-description">Life Changing App</p>
+                        </div>
+                        <div class="trending" id="trending-four">
+                            <img src="trending4.webp" alt="profile picture" width="50" height="50">
+                            <h4 class="trending-username">@alex</h4>
+                            <p class="trending-description">No Traffice Maker</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</head> 
-<body>
     
 </body>
 </html>
